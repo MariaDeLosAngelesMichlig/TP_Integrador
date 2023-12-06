@@ -1,0 +1,42 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>240</x><y>70</y><w>220</w><h>320</h></coordinates><panel_attributes>/Equipo/
+--
+-id: int
+-nombre: String
+-titulares: int
+-suplentes: int
+-directorTecnico: String
+-puntos: int
+-partidosJugados: int
+-golesUltimaFecha:int
+--
+-Equipo()
+-Equipo(id, nombre, titulares, suplentes, directorTecnico, puntos, partidosJugados, golesUltimaFecha) 
+#campeonato(Equipo):void
+/+jugarPartido(Equipo):Resultado/
+/+asignarPuntosVictoria(int):void/
+/+asignarPuntosEmpate(int):void/
+/+asignarPuntosDerrota(int):void/
++sumarPartidoJugado():void
++getGolesUltimaFecha():int
++getPuntos(): int
++getPartidosJugados(): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>440</y><w>220</w><h>130</h></coordinates><panel_attributes>EquipoLocal
+--
+--
++jugarPartido(Equipo):Resultado
++asignarPuntosVictoria(int):void
++asignarPuntosEmpate(int):void
++asignarPuntosDerrota(int):void
++sumarPartidoJugado():void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>380</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>90</y><w>210</w><h>180</h></coordinates><panel_attributes>Emun
+Resultado
+--
+--
++VICTORIA: int = 3
++EMPATE: int = 1
++DERROTA: int = 0
+-puntos:int
+--
++Resultado(int):void
++getPuntos():int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>190</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element></diagram>

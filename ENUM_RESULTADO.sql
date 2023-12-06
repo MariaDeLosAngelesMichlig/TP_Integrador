@@ -1,0 +1,1 @@
+SELECT * FROM torneo.emun_resultado;
